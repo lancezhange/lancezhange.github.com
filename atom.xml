@@ -4,7 +4,7 @@
   <subtitle><![CDATA[蓝色战歌]]></subtitle>
   <link href="/atom.xml" rel="self"/>
   <link href="http://lancezhange.com/"/>
-  <updated>2019-05-12T02:06:03.000Z</updated>
+  <updated>2019-08-19T01:08:38.000Z</updated>
   <id>http://lancezhange.com/</id>
   
   <author>
@@ -13,6 +13,32 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title><![CDATA[中年迫近]]></title>
+    <link href="http://lancezhange.com/2019/08/18/recent-thoughts/"/>
+    <id>http://lancezhange.com/2019/08/18/recent-thoughts/</id>
+    <published>2019-08-18T11:36:28.000Z</published>
+    <updated>2019-08-19T01:08:38.000Z</updated>
+    <content type="html"><![CDATA[<p>28 岁生日之后，我感受到了不断迫近的中年。<a id="more"></a></p>
+<p>28 岁生日这天，和未婚妻拍了婚纱照，从早上 8 点多开始，一直拍到第二天凌晨 2 点半左右，度过了非常疲劳的一天。当然，和最爱的人一起，用心记录属于我们的美好，这本身是一件开心的事，但是身体还是非常忠实于它的真实状态： 中间等待化妆的过程中，我瘫倒在沙发中，呼呼睡去。<br>像一个中年人。</p>
+<p>28 岁严格来说还并不能算作中年人，但是，体力的衰减却日益明显。那些和朋友们通宵 k 歌的日子似乎就在昨天，但现在已然不敢不能了，不仅如此，身体总有疲态，注意力和意志力都有所下降，容易感冒和过敏。</p>
+<p>但这不应该是 28 岁的青年该有的样子！28 岁的青年，本该是最有力量、最富朝气和活力的那些人。</p>
+<p>疲惫是身体发出的警告，警告我不能再无视身体的健康。</p>
+<p>疲惫的来源，并不全来自于工作上的压力。工作之外的时间，如果能合理安排，也是可以容纳锻炼和体育运动的，以后的日子里，必须注意。</p>
+<p>即使体力衰减，内心不能老去。某晚，我在家伏案，未婚妻在一边看抖音，互不打扰。不多时，听见抽泣的声音，扭头一看，她在哭泣。一问方知，是因为在抖音上看见了一个之前看过的电影片段，回想起它留在心中的那种酸楚感动，不能自禁。</p>
+<p>虽然年岁略同，但未婚妻显然还远未到中年。</p>
+]]></content>
+    <summary type="html">
+    <![CDATA[<p>28 岁生日之后，我感受到了不断迫近的中年。]]>
+    
+    </summary>
+    
+      <category term="中年" scheme="http://lancezhange.com/tags/%E4%B8%AD%E5%B9%B4/"/>
+    
+      <category term="life" scheme="http://lancezhange.com/categories/life/"/>
+    
+  </entry>
   
   <entry>
     <title><![CDATA[从 sublime 到 vscode]]></title>
@@ -893,28 +919,29 @@ $(function() {
     <link href="http://lancezhange.com/2014/11/15/euler-theorem/"/>
     <id>http://lancezhange.com/2014/11/15/euler-theorem/</id>
     <published>2014-11-15T01:18:00.000Z</published>
-    <updated>2019-04-06T16:25:16.000Z</updated>
+    <updated>2019-05-24T08:50:15.000Z</updated>
     <content type="html"><![CDATA[<p>数学的历史夜空中，伟大的数学家们的名字如群星闪耀，大神<a href="http://baike.baidu.com/item/%E8%8E%B1%E6%98%82%E5%93%88%E5%BE%B7%C2%B7%E6%AC%A7%E6%8B%89?from_id=162567&amp;type=syn&amp;fromtitle=%E6%AC%A7%E6%8B%89&amp;fr=aladdin" target="_blank" rel="external">欧拉</a>便是其中之一（也许也是最为闪亮的一个？）。作为一名瑞士数学家，欧拉将自己的名字留在了数学的诸多分支当中，各种欧拉常数、欧拉公式、欧拉定理随处可见，难怪拉普拉斯说: 读读欧拉，他是所有人的老师。<a id="more"></a></p>
 <p>欧拉的一个神奇之处在于，他能通过比较直观的方式来发现（证明）一些非常漂亮的结论，即使有时候证明的过程并不严谨，中间大量跳步，有时候甚至，过程是错误的，但结论却是完全正确！（数学家们因此经常在书中调侃欧拉，用一句“欧拉式证明”换取一个心照不宣的微笑。）这说明欧拉的数学直觉是惊人的，也许并没有拉马努金的神赐直觉那么让人震撼，但也实属一流。下面我们来看看欧拉是如何证明下面这个我以为是数学之美最生动体现之一的漂亮公式的：</p>
 <p>$$<br>\sum_{n=1}{\frac 1 {n^2}} = \frac {\pi^2} 6 \tag {1} \label {1} \\<br>$$</p>
 <p>\eqref{1}式的漂亮之处在于，首先它表明左侧的无穷级数收敛，其次，左侧看起来全是和自然数有关的东西，无穷求和之后却和$\pi$产生了联系。</p>
-<p>早在1734年，欧拉便给出了 $\eqref{1}$式的证明，证明过程中的想法和要点有三，一是三角函数$sin$的展式，二是，多项式用其根表示，比如，一个二次多项式$f(x)$如果以1和2为根，则$f(x)$可以被写为$a(1-\frac x 1)(1-\frac x 2)$，其中a为一个待确定的常数。三是，两个多项式相等，则对应系数相等。具体的，欧拉考察了函数$sin(\pi x)$，由$sin$函数的泰勒展开，$sin(\pi x)$可以写为</p>
-<p>$$<br>sin \pi x = \pi x - \frac {(\pi x)^3} {3!} + \frac {(\pi x)^5} {5!} - \cdots  \tag{2} \label{2}<br>$$<br>此外，注意到，$sin \pi x$这个函数有一个特殊的性质：它以所有整数为根，因此它也可以被写为</p>
+<p>早在 1734 年，欧拉便给出了 $\eqref{1}$式的证明，证明过程中的想法和要点有三，一是三角函数$sin$的展式，二是，多项式用其根表示，比如，一个二次多项式$f(x)$如果以 1 和 2 为根，则$f(x)$可以被写为$a(1-\frac x 1)(1-\frac x 2)$，其中 a 为一个待确定的常数。三是，两个多项式相等，则对应系数相等。具体的，欧拉考察了函数$sin(\pi x)$，由$sin$函数的泰勒展开，$sin(\pi x)$可以写为</p>
+<p>$$<br>sin \pi x = \pi x - \frac {(\pi x)^3} {3!} + \frac {(\pi x)^5} {5!} - \cdots  \tag{2} \label{2}<br>$$</p>
+<p>此外，注意到，$sin \pi x$这个函数有一个特殊的性质：它以所有整数为根，因此它也可以被写为</p>
 <p>$$<br>sin \pi x  = ax(1-x)(1+x)(1-\frac x 2)(1+\frac x 2)\cdots \\<br> = ax\prod_{n=1}^\infty (1-\frac x n)(1+\frac x n) \\<br> = ax\prod_{n=1}^\infty (1- \frac {x^2} {n^2}) \tag{3} \label{3}<br>$$</p>
 <p>对比一下\eqref{2}式和\eqref{3}式，由$x$这一项的系数对应相等可知，$a = \pi$，再由$x^3$这一项的系数对应相等可知</p>
 <p>$$<br>\pi \sum_{n=1}^\infty \frac 1 {n^2} = -\frac {\pi ^3} 6 \\<br>\to \sum_{n=1}^\infty \frac 1 {n^2} = \frac {\pi ^2} 6<br>$$</p>
 <p>如此便证明了结论。比之于用傅里叶级数的严格证明，这个证明虽然并不严谨，但却相当简单，直观，易懂。</p>
 <p>最后再提下和\eqref{1}式以及欧拉都比较相关的另外一个结论。我们都知道，级数$\sum_{n=1}\frac 1 n$ 是发散的，毫无疑问，但是，如果这里不是对所有正整数求和，而仅仅对素数求和呢，即，</p>
 <p>$$<br>\sum_{p\in P} \frac 1 p = \frac 1 2 + \frac 1 3 + \frac 1 5 + \cdots \tag{4} \label{4}<br>(其中P为全体素数的集合)<br>$$</p>
-<p>是收敛还是发散的？同样，早在1737年，欧拉就证明\eqref{4}式是发散的。下面来看一个该结论的“欧拉式证明”（未见得是欧拉的证明，我是在别处看到的）。</p>
+<p>是收敛还是发散的？同样，早在 1737 年，欧拉就证明\eqref{4}式是发散的。下面来看一个该结论的“欧拉式证明”（未见得是欧拉的证明，我是在别处看到的）。</p>
 <p>首先我们有</p>
 <p>$$<br>\sum_{n=1} \frac 1 n = \prod_{p\in P}(1 + \frac 1 p + \frac 1 {p^2} + \frac 1 {p^3} + \cdots)  \tag {5} \label{5} \\<br>= \prod_{p\in P} \frac 1 {1-\frac 1 p}<br>$$</p>
-<p>\eqref{5}式也是一个乍看之下较为神奇的式子，一些跟自然数相关的东西的求和变成了仅仅是素数相关的东西的乘积，如果足够敏感，应该能体察出它和<strong><em>算术基本定理</em></strong>（也即素因子分解定理：每个大于1的正整数都可以分解为素数的乘积）应该是有联系的，确实，我们可以用算术基本定理来简单地“证明”一下\eqref{5}式的合理性。注意到，比如，$(a+b)(c+d) = ac + ad + bc + bd$，其实就是每个括号中拿出来一项相乘，然后将所有可能的情况加起来。\eqref{5}只不过是将此推广到无穷的情形</p>
+<p>\eqref{5}式也是一个乍看之下较为神奇的式子，一些跟自然数相关的东西的求和变成了仅仅是素数相关的东西的乘积，如果足够敏感，应该能体察出它和<strong><em>算术基本定理</em></strong>（也即素因子分解定理：每个大于 1 的正整数都可以分解为素数的乘积）应该是有联系的，确实，我们可以用算术基本定理来简单地“证明”一下\eqref{5}式的合理性。注意到，比如，$(a+b)(c+d) = ac + ad + bc + bd$，其实就是每个括号中拿出来一项相乘，然后将所有可能的情况加起来。\eqref{5}只不过是将此推广到无穷的情形</p>
 <p>$$<br>(1 + \frac 1 2 + \frac 1 {2^2} + \frac 1 {2^3} + \cdots)(1 + \frac 1 3 + \frac 1 {3^2} + \frac 1 {3^3} + \cdots)(\cdots)(\cdots)\cdots<br>$$</p>
-<p>如果每个括号中都选1，则得到乘积为1，如果第一个括号选$\frac 1 2$，其他全选1，则乘积为$\frac 1 2$, 等。由于每个正整数都能被写为一些素数的乘积，因此总是可以选出一些项使其乘积为$\frac 1 n$ ，这就说明\eqref{5}式的结论是合理的。</p>
-<p>\eqref{5}式左侧发散，从而说明素数有无穷多个（这又是素数无穷多的一个证明）！再从 </p>
+<p>如果每个括号中都选 1，则得到乘积为 1，如果第一个括号选$\frac 1 2$，其他全选 1，则乘积为$\frac 1 2$, 等。由于每个正整数都能被写为一些素数的乘积，因此总是可以选出一些项使其乘积为$\frac 1 n$ ，这就说明\eqref{5}式的结论是合理的。</p>
+<p>\eqref{5}式左侧发散，从而说明素数有无穷多个（这又是素数无穷多的一个证明）！再从</p>
 <p>$$<br>\begin{align}<br>1 + \frac 1 p + \frac 1 {p^2} + \cdots = e^{\frac 1 p + O(\frac 1 {p^2})}<br>\end{align}<br>$$</p>
-<p>以及 </p>
+<p>以及</p>
 <p>$$<br>\sum_{p\in P} {\frac 1 {p^2}} \le \sum_{n=1} \frac 1 {n^2}<br>$$</p>
 <p>收敛，知道$\sum_{p\in P} \frac 1 p$是发散的。</p>
 ]]></content>
@@ -1169,14 +1196,14 @@ d3.timer(function() {
     <link href="http://lancezhange.com/2014/10/15/more-d3-examples--snake/"/>
     <id>http://lancezhange.com/2014/10/15/more-d3-examples--snake/</id>
     <published>2014-10-15T04:37:00.000Z</published>
-    <updated>2017-09-02T14:54:33.000Z</updated>
+    <updated>2019-05-15T14:08:03.000Z</updated>
     <content type="html"><![CDATA[<p>来看下面这个摆动的蛇的例子<a id="more"></a></p>
-<script src="http://d3js.org/d3.v3.min.js"></script> 
+<script src="http://d3js.org/d3.v3.min.js"></script>
 <div id="body1">
 
 </div>
 
-<script type="text/javascript"> 
+<script type="text/javascript">
 
 var margin = {top: 40, right: 40, bottom: 40, left: 40},
     width = 960 - margin.left - margin.right,
@@ -1416,38 +1443,38 @@ d3.select(this).select("text").transition()
     <link href="http://lancezhange.com/2014/10/10/word2vec/"/>
     <id>http://lancezhange.com/2014/10/10/word2vec/</id>
     <published>2014-10-10T01:30:00.000Z</published>
-    <updated>2019-04-06T12:01:03.000Z</updated>
-    <content type="html"><![CDATA[<p>其实听闻<a href="http://code.google.com/p/word2vec/" target="_blank" rel="external">word2vec</a>的鼎鼎大名已经很久了，但 google 的C源代码在 windows 下即使用 cygwin 也还是不能 make 成功，总是报出找不到 pthread.h 的错误，而 pthread.h 貌似是 linux 特有的头文件，只好作罢。看到<a href="http://blog.csdn.net/zhoubl668/article/details/24314769" target="_blank" rel="external">别人</a>玩 word2vec 玩的很 high, 真是羡慕<a id="more"></a>。  </p>
-<p>前些日子，<a href="https://spark.apache.org/" target="_blank" rel="external">spark</a> 发布了 1.1.0 版本，其中首次加入了 word2vec 的实现，于是赶紧拿来尝试了一番。让人失望的是，<a href="http://people.apache.org/~pwendell/spark-1.1.0-snapshot2-docs/mllib-feature-extraction.html" target="_blank" rel="external">官方给出的示例</a>在我的机子上居然没有跑成功，经过一番实验(<code>val line = Source.fromFile(&quot;e:/tempfile/text8&quot;).getLines</code> 返回 <code>java.lang.OutOfMemoryError: Java heap space</code> 的错误，而 <code>val n = sc.textFile(&quot;e:/tempfile/text8&quot;).count</code> 能让 spark 奔溃)，基本可以证实是由于给出的训练文件 text8 格式不对，貌似这个90M+的文件只有一行，而作为一行，它显然太长了。    </p>
+    <updated>2019-06-05T12:57:02.000Z</updated>
+    <content type="html"><![CDATA[<p>其实听闻<a href="http://code.google.com/p/word2vec/" target="_blank" rel="external">word2vec</a>的鼎鼎大名已经很久了，但 google 的 C 源代码在 windows 下即使用 cygwin 也还是不能 make 成功，总是报出找不到 pthread.h 的错误，而 pthread.h 貌似是 linux 特有的头文件，只好作罢。看到<a href="http://blog.csdn.net/zhoubl668/article/details/24314769" target="_blank" rel="external">别人</a>玩 word2vec 玩的很 high, 真是羡慕<a id="more"></a>。</p>
+<p>前些日子，<a href="https://spark.apache.org/" target="_blank" rel="external">spark</a> 发布了 1.1.0 版本，其中首次加入了 word2vec 的实现，于是赶紧拿来尝试了一番。让人失望的是，<a href="http://people.apache.org/~pwendell/spark-1.1.0-snapshot2-docs/mllib-feature-extraction.html" target="_blank" rel="external">官方给出的示例</a>在我的机子上居然没有跑成功，经过一番实验(<code>val line = Source.fromFile(&quot;e:/tempfile/text8&quot;).getLines</code> 返回 <code>java.lang.OutOfMemoryError: Java heap space</code> 的错误，而 <code>val n = sc.textFile(&quot;e:/tempfile/text8&quot;).count</code> 能让 spark 奔溃)，基本可以证实是由于给出的训练文件 text8 格式不对，貌似这个 90M+的文件只有一行，而作为一行，它显然太长了。</p>
 <p>不必纠结于此，我们改用英国作家简奥斯汀的名作艾玛(<strong>Emma</strong>)一书（可在 <a href="http://www.gutenberg.org/" target="_blank" rel="external">Project Gutenberg</a>上下载）来做</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">import org<span class="selector-class">.apache</span><span class="selector-class">.spark</span><span class="selector-class">.mllib</span><span class="selector-class">.feature</span><span class="selector-class">.Word2Vec</span></div><div class="line">val <span class="selector-tag">input</span> = sc.textFile(<span class="string">"e:/database/emma/emma.txt"</span>).map(line =&gt; line.split(<span class="string">" "</span>).toSeq)  </div><div class="line">val word2vec = new Word2Vec()</div><div class="line">val model = word2vec.fit(input)</div></pre></td></tr></table></figure>
-<p>这样，模型顺利训练出来。下面找一下 Emma 的相近词  </p>
+<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line">import org<span class="selector-class">.apache</span><span class="selector-class">.spark</span><span class="selector-class">.mllib</span><span class="selector-class">.feature</span><span class="selector-class">.Word2Vec</span></div><div class="line">val <span class="selector-tag">input</span> = sc.textFile(<span class="string">"e:/database/emma/emma.txt"</span>).map(line =&gt; line.split(<span class="string">" "</span>).toSeq)</div><div class="line">val word2vec = new Word2Vec()</div><div class="line">val model = word2vec.fit(input)</div></pre></td></tr></table></figure>
+<p>这样，模型顺利训练出来。下面找一下 Emma 的相近词</p>
 <figure class="highlight kotlin"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">val</span> synonyms = model.findSynonyms(<span class="string">"Emma"</span>, <span class="number">40</span>)</div><div class="line"><span class="keyword">for</span>((synonym, cosineSimilarity) &lt;- synonyms) &#123;</div><div class="line">    println(s<span class="string">"<span class="variable">$synonym</span> <span class="variable">$cosineSimilarity</span>"</span>)</div><div class="line"> &#125;</div></pre></td></tr></table></figure>
-<p>不过上面这种打印太难看了，改进一下 </p>
+<p>不过上面这种打印太难看了，改进一下</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">synonyms.foreach&#123;<span class="keyword">case</span> <span class="function">(<span class="params">synonym, cosineSimilarity</span>) =&gt;</span> printf(<span class="string">"%-20s %-20.16f\n"</span>,synonym, cosineSimilarity)&#125;</div></pre></td></tr></table></figure>
 <p>效果如下图</p>
-  
-<p>下面考虑用中文文本训练一个模型。我用的训练集是很久以前在<a href="http://datatang.com/" target="_blank" rel="external">数据堂</a>下载的 历届矛盾文学奖 文本集，其中收录的是前8届茅盾文学奖获奖作品的文本。在用 spark 做 word2vec 之前，必须先做分词。这里我选择用 R 的 <strong>Rwordseg</strong> 包来做分词，并将结果写入 words.txt 文件中（当然，这里我们做的非常粗糙，就是简单的分词，停用词都没处理；如果有个好点的词典，分词的效果会更好，这是题外话）</p>
+<p><img src="http://pic.yupoo.com/lancezhange_v/E7wetj2D/NRDtx.jpg" alt=""></p>
+<p>下面考虑用中文文本训练一个模型。我用的训练集是很久以前在<a href="http://datatang.com/" target="_blank" rel="external">数据堂</a>下载的 历届矛盾文学奖 文本集，其中收录的是前 8 届茅盾文学奖获奖作品的文本。在用 spark 做 word2vec 之前，必须先做分词。这里我选择用 R 的 <strong>Rwordseg</strong> 包来做分词，并将结果写入 words.txt 文件中（当然，这里我们做的非常粗糙，就是简单的分词，停用词都没处理；如果有个好点的词典，分词的效果会更好，这是题外话）</p>
 <figure class="highlight nix"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div></pre></td><td class="code"><pre><div class="line">library(Rwordseg)</div><div class="line"></div><div class="line"><span class="attr">data_dir</span> = <span class="string">"E:/database/历届矛盾文学奖作品/历届茅盾文学奖"</span></div><div class="line"><span class="attr">files</span> = list.files(data_dir,<span class="attr">pattern="*.txt")</span></div><div class="line"><span class="attr">result_file</span> = <span class="string">"e:/tempfile/words.txt"</span></div><div class="line"></div><div class="line">for(i <span class="keyword">in</span> <span class="number">1</span>: length(files))&#123;</div><div class="line">  <span class="attr">filename</span> = paste(data_dir, files[i],<span class="attr">sep="/")</span></div><div class="line">  <span class="attr">content</span> = readLines(filename) <span class="comment"># 每一行是一个字符串</span></div><div class="line">  <span class="attr">term</span> = unlist(lapply(content, segmentCN))</div><div class="line">  write(term, <span class="attr">file</span> = result_file, <span class="attr">append=T,</span> <span class="attr">ncolumns=10)</span></div><div class="line"> &#125;</div></pre></td></tr></table></figure>
-<p>得到的 words.txt 不足40M，然后用 spark 做 word2vec，代码和前面的类似。<br>虽然模型也能顺利训练出来，但是新的问题又冒出来了：在 powershell 下，打印出来的相似词全都是乱码。后来各种尝试，包括转换编码方式，将结果写入文件，写成应用提交而不是 spark-shell 运行，等等，都不能解决这个问题。简直是当初用 Python 处理中文的噩梦重演啊，哭—-最后仍然未能解决这个问题，囧。  </p>
-<p>但我的 word2vec 体验之旅怎么能就此结束呢。我又尝试了其他途径，如下<br>Python 的 <a href="http://radimrehurek.com/gensim/models/word2vec.html" target="_blank" rel="external">Gensim</a>包也实现了 word2vec 算法，但用  <code>pip install --upgrade gensim</code> 安装之后， 用 <code>import gensim</code> 加载居然出现  “ImportError: cannot import name utils！”错误，最后未能解决，再次失败！<br>Java 的 <a href="http://deeplearning4j.org/compare-dl4j-torch7-pylearn.html" target="_blank" rel="external">DL4J</a>(Deep learning for Java) 工具也有实现 word2vec，但需要安装 LAPACK，这是在 windows 下的又一个噩梦，果断放弃！<br>大神李舰写了 <strong>tmcn.word2vec</strong> 包，不过，不是发布到 CRAN，而是 R-Forge 上，并且还没有编译好的版本，只能用如下命令从源码编译安装：</p>
+<p>得到的 words.txt 不足 40M，然后用 spark 做 word2vec，代码和前面的类似。<br>虽然模型也能顺利训练出来，但是新的问题又冒出来了：在 powershell 下，打印出来的相似词全都是乱码。后来各种尝试，包括转换编码方式，将结果写入文件，写成应用提交而不是 spark-shell 运行，等等，都不能解决这个问题。简直是当初用 Python 处理中文的噩梦重演啊，哭—-最后仍然未能解决这个问题，囧。</p>
+<p>但我的 word2vec 体验之旅怎么能就此结束呢。我又尝试了其他途径，如下<br>Python 的 <a href="http://radimrehurek.com/gensim/models/word2vec.html" target="_blank" rel="external">Gensim</a>包也实现了 word2vec 算法，但用 <code>pip install --upgrade gensim</code> 安装之后， 用 <code>import gensim</code> 加载居然出现 “ImportError: cannot import name utils！”错误，最后未能解决，再次失败！<br>Java 的 <a href="http://deeplearning4j.org/compare-dl4j-torch7-pylearn.html" target="_blank" rel="external">DL4J</a>(Deep learning for Java) 工具也有实现 word2vec，但需要安装 LAPACK，这是在 windows 下的又一个噩梦，果断放弃！<br>大神李舰写了 <strong>tmcn.word2vec</strong> 包，不过，不是发布到 CRAN，而是 R-Forge 上，并且还没有编译好的版本，只能用如下命令从源码编译安装：</p>
 <pre><code>install.packages(&quot;tmcn.word2vec&quot;, repos=&quot;http://R-Forge.R-project.org&quot;,type=&quot;source&quot;)
-</code></pre><p>出现编译错误，无解。  </p>
-<p>受挫如此，只会让我更加停不下来。皇天不负有心人，终于幸运地找到了一个作者<a href="https://github.com/zhangyafeikimi/word2vec-win32" target="_blank" rel="external">为 windows 调试的 wrod2vec C源代码版本</a>，并且托管在 github 上，很方便地下载下来，用 cygwin 执行 make, 虽然还是各种报出 unknown character 的 warnings (who cares warnings?)，但好在顺利编译成功，真感谢这个作者啊<br>下面开始训练模型</p>
-<pre><code>./word2vec -train e:/tempfile/words.txt -output vectors.bin -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1  
-</code></pre><p>(吐槽：我机子的处理能力不行啊，每线程每秒只能处理6K余单词，别人随便都是4W+）<br>然后用下面的命令就能交互查询所给单词的相似词</p>
+</code></pre><p>出现编译错误，无解。</p>
+<p>受挫如此，只会让我更加停不下来。皇天不负有心人，终于幸运地找到了一个作者<a href="https://github.com/zhangyafeikimi/word2vec-win32" target="_blank" rel="external">为 windows 调试的 wrod2vec C 源代码版本</a>，并且托管在 github 上，很方便地下载下来，用 cygwin 执行 make, 虽然还是各种报出 unknown character 的 warnings (who cares warnings?)，但好在顺利编译成功，真感谢这个作者啊<br>下面开始训练模型</p>
+<pre><code>./word2vec -train e:/tempfile/words.txt -output vectors.bin -cbow 0 -size 200 -window 5 -negative 0 -hs 1 -sample 1e-3 -threads 12 -binary 1
+</code></pre><p>(吐槽：我机子的处理能力不行啊，每线程每秒只能处理 6K 余单词，别人随便都是 4W+）<br>然后用下面的命令就能交互查询所给单词的相似词</p>
 <pre><code>./distance vectors.bin
-</code></pre><p>附上几张结果截图  </p>
+</code></pre><p>附上几张结果截图</p>
 <img src="http://pic.yupoo.com/lancezhange_v/E7vPD3AB/lajKc.png">
 <img src="http://pic.yupoo.com/lancezhange_v/E7vPCLLT/PMzmI.png">
 <img src="http://pic.yupoo.com/lancezhange_v/E7vPCCG9/BvLGj.png">
-<p>结果还不赖。  </p>
+<p>结果还不赖。</p>
 <h2 id="Todo"><a href="#Todo" class="headerlink" title="Todo"></a>Todo</h2><ul>
 <li>深入了解一下 word2vec 背后的原理，重点研读几篇相关论文，以及有道技术分享的 <a href="http://techblog.youdao.com/?p=915" target="_blank" rel="external">Deep Learning 实战之 Word2vec</a></li>
 </ul>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>其实听闻<a href="http://code.google.com/p/word2vec/" target="_blank" rel="external">word2vec</a>的鼎鼎大名已经很久了，但 google 的C源代码在 windows 下即使用 cygwin 也还是不能 make 成功，总是报出找不到 pthread.h 的错误，而 pthread.h 貌似是 linux 特有的头文件，只好作罢。看到<a href="http://blog.csdn.net/zhoubl668/article/details/24314769" target="_blank" rel="external">别人</a>玩 word2vec 玩的很 high, 真是羡慕]]>
+    <![CDATA[<p>其实听闻<a href="http://code.google.com/p/word2vec/" target="_blank" rel="external">word2vec</a>的鼎鼎大名已经很久了，但 google 的 C 源代码在 windows 下即使用 cygwin 也还是不能 make 成功，总是报出找不到 pthread.h 的错误，而 pthread.h 貌似是 linux 特有的头文件，只好作罢。看到<a href="http://blog.csdn.net/zhoubl668/article/details/24314769" target="_blank" rel="external">别人</a>玩 word2vec 玩的很 high, 真是羡慕]]>
     
     </summary>
     
@@ -1462,27 +1489,27 @@ d3.select(this).select("text").transition()
     <link href="http://lancezhange.com/2014/05/27/nmcdr-is-now-on-cran/"/>
     <id>http://lancezhange.com/2014/05/27/nmcdr-is-now-on-cran/</id>
     <published>2014-05-26T23:40:00.000Z</published>
-    <updated>2019-04-06T14:26:29.000Z</updated>
-    <content type="html"><![CDATA[<p>变点(change-point)理论是探测序列的潜在分布是否发生显著变化以及确定变化发生时刻的统计理论，自提出之日起，对它的研究文献可谓汗牛充栋，并且已经有了一些不错的成果，包括参数和非参数的方法、线性回归的方法，也有人将它纳入贝叶斯理论的的框架中去讨论。由于具有实际应用价值，变点理论和方法在机器学习、模式识别、质量控制、信号处理等领域都获得了广泛的应用<a id="more"></a>。  </p>
-<p>简单来说，变点（在有些文献中也称为‘断点’或者‘分割点’）模型适用于有序的随机数据序列，它试图将序列分成不同的区段，使得同一区段的数据大致遵循相同的分布，而不同区段之间的数据尽可能遵循不同的分布。不同区段的分界点就称作变点。<br>按照变点个数的不同，变点问题可以分为单变点和多变点；针对一维数据和高维数据，也有不同的处理方法。<br>作为统计分析领域最受欢迎的软件，R 中已经有许多软件包可以用来作变点分析，包括但不限于 bcp, cpm, ecp, changepoint 等。此外，根据<a href="http://sms.nankai.edu.cn/teacher/szdw/xs004/51.html" target="_blank" rel="external">邹长亮</a>等牛人的<a href="http://www.e-publications.org/ims/submission/AOS/user/submissionFile/17525?confirm=abd32a18" target="_blank" rel="external">一篇牛叉论文</a>中提出的牛叉的非参数方法编写的R包 <a href="http://cran.r-project.org/web/packages/nmcdr/index.html" target="_blank" rel="external">nmcdr</a>(目前版本 0.3.0 )也已经新鲜出炉，可于各大 CRAN 镜像站点下载使用。  </p>
-<p>nmcdr 包中，最主要的函数就是 nmcd：  </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">nmcd</span><span class="params">(x, kmax, cpp, ncp, n)</span></span></div></pre></td></tr></table></figure>
+    <updated>2019-06-05T12:55:43.000Z</updated>
+    <content type="html"><![CDATA[<p>变点(change-point)理论是探测序列的潜在分布是否发生显著变化以及确定变化发生时刻的统计理论，自提出之日起，对它的研究文献可谓汗牛充栋，并且已经有了一些不错的成果，包括参数和非参数的方法、线性回归的方法，也有人将它纳入贝叶斯理论的的框架中去讨论。由于具有实际应用价值，变点理论和方法在机器学习、模式识别、质量控制、信号处理等领域都获得了广泛的应用<a id="more"></a>。</p>
+<p>简单来说，变点（在有些文献中也称为‘断点’或者‘分割点’）模型适用于有序的随机数据序列，它试图将序列分成不同的区段，使得同一区段的数据大致遵循相同的分布，而不同区段之间的数据尽可能遵循不同的分布。不同区段的分界点就称作变点。<br>按照变点个数的不同，变点问题可以分为单变点和多变点；针对一维数据和高维数据，也有不同的处理方法。<br>作为统计分析领域最受欢迎的软件，R 中已经有许多软件包可以用来作变点分析，包括但不限于 bcp, cpm, ecp, changepoint 等。此外，根据<a href="http://sms.nankai.edu.cn/teacher/szdw/xs004/51.html" target="_blank" rel="external">邹长亮</a>等牛人的<a href="http://www.e-publications.org/ims/submission/AOS/user/submissionFile/17525?confirm=abd32a18" target="_blank" rel="external">一篇牛叉论文</a>中提出的牛叉的非参数方法编写的 R 包 <a href="http://cran.r-project.org/web/packages/nmcdr/index.html" target="_blank" rel="external">nmcdr</a>(目前版本 0.3.0 )也已经新鲜出炉，可于各大 CRAN 镜像站点下载使用。</p>
+<p>nmcdr 包中，最主要的函数就是 nmcd：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">nmcd(x, kmax, cpp, ncp, n)</div></pre></td></tr></table></figure>
 <p>该函数用以对一维数据做变点分析，其中，参数 x 是数据序列，该参数也是唯一必须赋值的参数，其他几个参数都有默认的值，一般情况下不用调节，具体细节请参见该包的说明文档。下面我们来看一个例子。</p>
-<figure class="highlight haskell"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta"># 这里假设你已经安装了需要用到的各个包      </span></div><div class="line"><span class="title">library</span>(nmcdr)   </div><div class="line"><span class="class"><span class="keyword">data</span>(<span class="type">Blocks</span>)</span></div></pre></td></tr></table></figure>
-<p>nmcdr 包自带的 Blocks 数据是一个人为构造的模拟数据，它包含11个真正的变点，其位置分别为 100， 130， 150， 230， 250, 400， 440， 650， 760， 780， 810. 我们来对它做变点检测：   </p>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="literal">t</span> &lt;- nmcd(<span class="name">Blocks</span>)</div></pre></td></tr></table></figure>
-<p>可以看到，nmcd 函数检测除了11个变点，分别为 102， 132， 158， 231， 251， 401， 441， 651， 761， 781， 811. 和真正的变点相比，差距微乎其微（当然，有许多评价变点估计优劣的准则，这里我们不去讨论它，只从直观上来感受），效果令人满意。<br>对结果 t, 可以画图：  </p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 这里假设你已经安装了需要用到的各个包</span></div><div class="line"><span class="keyword">library</span>(nmcdr)</div><div class="line">data(Blocks)</div></pre></td></tr></table></figure>
+<p>nmcdr 包自带的 Blocks 数据是一个人为构造的模拟数据，它包含 11 个真正的变点，其位置分别为 100， 130， 150， 230， 250, 400， 440， 650， 760， 780， 810. 我们来对它做变点检测：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">t &lt;- nmcd(Blocks)</div></pre></td></tr></table></figure>
+<p>可以看到，nmcd 函数检测除了 11 个变点，分别为 102， 132， 158， 231， 251， 401， 441， 651， 761， 781， 811. 和真正的变点相比，差距微乎其微（当然，有许多评价变点估计优劣的准则，这里我们不去讨论它，只从直观上来感受），效果令人满意。<br>对结果 t, 可以画图：</p>
 <figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">plot</span><span class="params">(t)</span></span></div></pre></td></tr></table></figure>
-<img src="http://pic.yupoo.com/lancezhange_v/DMOspifF/SoeNk.png">  
-<p>此外，还可以返回包括 BIC 值在内的详细信息：  </p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="title">summary</span><span class="params">(t)</span></span></div></pre></td></tr></table></figure>
-<p>前面我们说过，变点方法在实际问题中也有很多应用，下面我们来看一个很简单的例子，虽然略显粗糙，但却能让我们直观地感受到变点方法的实用性。<br>我们考虑图像处理领域中具有基础重要性的图像边缘检测问题，当然，这里我们只针对2D灰度图。所谓边缘，其实就是对比度较高，即亮度发生剧烈改变的点的集合。由于 nmcdr 包只能做一维数据的变点检测，所以我们将每一行（当然，每一列，或者每一对角线都行）作为一个序列来检测变点（确实很粗糙对吧），这些变点的位置应该大致就是边缘所在了。下面我们对 R 包 EBImage 中自带的一张图片做个演示，直接上代码：  </p>
-<figure class="highlight gauss"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">library</span>(EBImage)   </div><div class="line"><span class="meta"># vignette("EBImage-introduction")  </span></div><div class="line"><span class="keyword">library</span>(nmcdr)  </div><div class="line"><span class="keyword">library</span>(foreach) <span class="meta"># 为了提高计算效率，采用并行计算  </span></div><div class="line"><span class="keyword">library</span>(doParallel)  </div><div class="line"></div><div class="line">cl &lt;- makeCluster(<span class="number">4</span>)   <span class="meta"># 创建一个具有4个节点的集群  </span></div><div class="line">registerDoParallel(cl)    </div><div class="line"></div><div class="line"><span class="meta"># 读入图片</span></div><div class="line">f = <span class="keyword">system</span>.file(<span class="string">"images"</span>, <span class="string">"lena.png"</span>, package=<span class="string">"EBImage"</span>)  </div><div class="line">lena = readImage(f)  </div><div class="line"><span class="meta"># 用 display(lena) 来查看图片</span></div></pre></td></tr></table></figure>
-<p>这张图片在图像处理领域真是随处可见啊<br><img src="http://pic.yupoo.com/lancezhange_v/DMOsbku3/cQcrm.png">      </p>
-<figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mlena = imageData(<span class="name">lena</span>)  </div><div class="line">dim(<span class="name">mlena</span>)</div></pre></td></tr></table></figure>
-<p>可以看到，该图像为一个 512 X 512 的灰度图，每一元素的值都为 0-1 之间的一个值，表示亮度  </p>
-<figure class="highlight makefile"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 按照每一行数据来检测变点  </span></div><div class="line">rmlena = foreach(i = 1:nrow(mlena), .combine = rbind, .packages=<span class="string">"nmcdr"</span>)   %dopar% &#123;  </div><div class="line">t = nmcd(mlena[i,])$cpp  </div><div class="line">mlena[i,t]=1     <span class="comment"># 边缘置白  </span></div><div class="line">mlena[i,-t]=0    <span class="comment"># 背景置黑    </span></div><div class="line">mlena[i,]  </div><div class="line">&#125;  </div><div class="line"><span class="comment"># 将得到的数据存为图片  </span></div><div class="line">writeImage(rmlena,<span class="string">"lenaEdgeDetectionRowChangePoint.png"</span>)</div></pre></td></tr></table></figure>
-<p>最终得到的结果如图：<br><br>由于没有进行任何参数调节，也没有采取任何预处理措施，所以做到这样的结果已经可以让人满意了。 </p>
+<img src="http://pic.yupoo.com/lancezhange_v/DMOspifF/SoeNk.png">
+<p>此外，还可以返回包括 BIC 值在内的详细信息：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">summary(t)</div></pre></td></tr></table></figure>
+<p>前面我们说过，变点方法在实际问题中也有很多应用，下面我们来看一个很简单的例子，虽然略显粗糙，但却能让我们直观地感受到变点方法的实用性。<br>我们考虑图像处理领域中具有基础重要性的图像边缘检测问题，当然，这里我们只针对 2D 灰度图。所谓边缘，其实就是对比度较高，即亮度发生剧烈改变的点的集合。由于 nmcdr 包只能做一维数据的变点检测，所以我们将每一行（当然，每一列，或者每一对角线都行）作为一个序列来检测变点（确实很粗糙对吧），这些变点的位置应该大致就是边缘所在了。下面我们对 R 包 EBImage 中自带的一张图片做个演示，直接上代码：</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div></pre></td><td class="code"><pre><div class="line"><span class="keyword">library</span>(EBImage)</div><div class="line"><span class="comment"># vignette("EBImage-introduction")</span></div><div class="line"><span class="keyword">library</span>(nmcdr)</div><div class="line"><span class="keyword">library</span>(foreach) <span class="comment"># 为了提高计算效率，采用并行计算</span></div><div class="line"><span class="keyword">library</span>(doParallel)</div><div class="line"></div><div class="line">cl &lt;- makeCluster(<span class="number">4</span>)   <span class="comment"># 创建一个具有4个节点的集群</span></div><div class="line">registerDoParallel(cl)</div><div class="line"></div><div class="line"><span class="comment"># 读入图片</span></div><div class="line">f = system.file(<span class="string">"images"</span>, <span class="string">"lena.png"</span>, package=<span class="string">"EBImage"</span>)</div><div class="line">lena = readImage(f)</div><div class="line"><span class="comment"># 用 display(lena) 来查看图片</span></div></pre></td></tr></table></figure>
+<p>这张图片在图像处理领域真是随处可见啊<br><img src="http://pic.yupoo.com/lancezhange_v/DMOsbku3/cQcrm.png" alt=""></p>
+<figure class="highlight lisp"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">mlena = imageData(<span class="name">lena</span>)</div><div class="line">dim(<span class="name">mlena</span>)</div></pre></td></tr></table></figure>
+<p>可以看到，该图像为一个 512 X 512 的灰度图，每一元素的值都为 0-1 之间的一个值，表示亮度</p>
+<figure class="highlight r"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># 按照每一行数据来检测变点</span></div><div class="line">rmlena = foreach(i = <span class="number">1</span>:nrow(mlena), .combine = rbind, .packages=<span class="string">"nmcdr"</span>)   %dopar% &#123;</div><div class="line">t = nmcd(mlena[i,])$cpp</div><div class="line">mlena[i,t]=<span class="number">1</span>     <span class="comment"># 边缘置白</span></div><div class="line">mlena[i,-t]=<span class="number">0</span>    <span class="comment"># 背景置黑</span></div><div class="line">mlena[i,]</div><div class="line">&#125;</div><div class="line"><span class="comment"># 将得到的数据存为图片</span></div><div class="line">writeImage(rmlena,<span class="string">"lenaEdgeDetectionRowChangePoint.png"</span>)</div></pre></td></tr></table></figure>
+<p>最终得到的结果如图：<br><img src="http://pic.yupoo.com/lancezhange_v/DMOspL8a/m1yem.png" alt=""><br>由于没有进行任何参数调节，也没有采取任何预处理措施，所以做到这样的结果已经可以让人满意了。</p>
 ]]></content>
     <summary type="html">
     <![CDATA[<p>变点(change-point)理论是探测序列的潜在分布是否发生显著变化以及确定变化发生时刻的统计理论，自提出之日起，对它的研究文献可谓汗牛充栋，并且已经有了一些不错的成果，包括参数和非参数的方法、线性回归的方法，也有人将它纳入贝叶斯理论的的框架中去讨论。由于具有实际应用价值，变点理论和方法在机器学习、模式识别、质量控制、信号处理等领域都获得了广泛的应用]]>
@@ -1550,11 +1577,12 @@ d3.select(this).select("text").transition()
     <link href="http://lancezhange.com/2013/11/10/mother/"/>
     <id>http://lancezhange.com/2013/11/10/mother/</id>
     <published>2013-11-10T14:35:00.000Z</published>
-    <updated>2019-04-06T12:00:23.000Z</updated>
-    <content type="html"><![CDATA[<p>韩国导演奉俊昊2009年的作品。<a id="more"></a><br>豆瓣上这个名为<a href="http://movie.douban.com/review/2438716/" target="_blank" rel="external">遗忘了的自我，不需要谁的动情</a>的影评确实不错，唯一遗憾的是居然没有提到最后母亲在大巴上起舞的镜头——我觉得这个镜头是这部片子最具震撼力的一幕，堪称经典中的经典。橘色的夕阳透过车窗照过来，映照着车上的人们连同母亲一起起舞摇摆的身影，随着大巴一起摇曳闪烁，只有剪影却看不清面容，透出一股越来越冰凉和冷漠的气息。音乐也是淡淡的，有一丝丝欢快甚至悠扬自如，但因着整个故事所积淀的压抑和沉重，终究无法获得轻松。一切就在这悠扬的音乐和波光粼粼的光与影的交织中结束。字幕君道：晚凉天静月华开，真是好评语。<br>再赞下奉俊昊大导演。《杀人回忆》已经够经典的了，这一部《母亲》又是难得的佳作，真心不易。<br>附上结尾的截图一张<br></p>
+    <updated>2019-06-05T12:39:35.000Z</updated>
+    <content type="html"><![CDATA[<p>韩国导演奉俊昊 2009 年的作品。<a id="more"></a><br>豆瓣上这个名为<a href="http://movie.douban.com/review/2438716/" target="_blank" rel="external">遗忘了的自我，不需要谁的动情</a>的影评确实不错，唯一遗憾的是居然没有提到最后母亲在大巴上起舞的镜头——我觉得这个镜头是这部片子最具震撼力的一幕，堪称经典中的经典。橘色的夕阳透过车窗照过来，映照着车上的人们连同母亲一起起舞摇摆的身影，随着大巴一起摇曳闪烁，只有剪影却看不清面容，透出一股越来越冰凉和冷漠的气息。音乐也是淡淡的，有一丝丝欢快甚至悠扬自如，但因着整个故事所积淀的压抑和沉重，终究无法获得轻松。一切就在这悠扬的音乐和波光粼粼的光与影的交织中结束。字幕君道：晚凉天静月华开，真是好评语。<br>再赞下奉俊昊大导演。《杀人回忆》已经够经典的了，这一部《母亲》又是难得的佳作，真心不易。<br>附上结尾的截图一张</p>
+<p><img src="http://pic.yupoo.com/lancezhange_v/DDabJ4ls/ip4iY.png" alt=""></p>
 ]]></content>
     <summary type="html">
-    <![CDATA[<p>韩国导演奉俊昊2009年的作品。]]>
+    <![CDATA[<p>韩国导演奉俊昊 2009 年的作品。]]>
     
     </summary>
     
@@ -1636,7 +1664,7 @@ d3.select(this).select("text").transition()
     <id>http://lancezhange.com/2013/10/01/meimei/</id>
     <published>2013-10-01T06:03:00.000Z</published>
     <updated>2017-09-02T14:54:33.000Z</updated>
-    <content type="html"><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><span id="encrypt-message">输入密码继续访问。</span><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+TdYWpuwQQUTI4lXTtS2gV4qEbbJf/Ib76uM16T3wOIbe61lX1P/LPJxFudzUNS74V0e3pyJWUK7+h+R6hfzSXqzr0bONPKBlnESBhFeP8vehk6zA5VxhVXnded2UKfbWshz+ljGS1tiYutbX69v7EOGLmhmkMCuJB1viXp41CKzSWPTGquYmwbfpFQu7QjuFLJ0kEMu1BHEeJfkN5C2AlgHsBrmHPlt7oL8HH4TThb7nEe2V/oPzy+RRJgrQnnxvMn5xR60xvIVZhnsmsM15ySwB2/TZMIrQGalTm4LHoUKqr5uB59NX9e/7UDkQciXz2+Q1zRuCnb6vcEz8rohlzp/DOovmOFwH/NM6pR1TByYz50Ht0Hw4/I18+PtR1IQdVQyuvHcejHgX6dgFxB9EUgFPiPOM7K1c7RZjhatlzyBpL0jR95z+/SYQUHCgk+ApGDgcNklaJ3Fqkc8KJ2Emm48tTMD7LUNAu/1VxwoUVYuM7zEtkD2T/17UDf6cj4juc9LkM6O5it9be+DphUGkmUfTkS+XpOfSWSqyr8aF3THLpMV9lL0NRo3YYqavybAZrODS+0HWwesqI+U1RWWCK3cAsP1Ye7KX5SaUx+cCsvELFesctPEv+rNphdk9j2uJz/rEDnyXbgC7+XHnDuARbqJKq1u4yCqrFnMMJyqi+xYzj8h6M7yqqXtOYT8lq7wov1/IWgWTfKdvcd2IckdSgkIh+c4D0ns2lP9zvBnHjlQQqWJIVOLfJcKcmyY/bEpI75h7biDs6u+SPAOEbYLutq+yabiUnSMUXUugbzs57j4H7qMB1cyOf0WHvkrQwv96f+Bjuyt4DBD+X5Y6JrGWo696H7XcRLbpNN2Bn/6w3aov37PT6e5ibgfLHMpdXX3WWnLu0NdFfK1HfSK4M4/VEtbZkFkFOKBIQm2P1yDlBq62BoQiMwewNDsKlXF5CE5VuJXuVyl6ozjlqy0YRbA72fMwI1zZGqJv3+0Sr8bYIwVJ0lYZQz2eubtvTT4KNAegsH0eDhqOFBVIRIwt13QV9Wu4KOhMkl6Xqv7uHiaQfyvfpYkzXuOwGixrMJ8c8rDx9RFJ3kfoKHi2diWOeJoZmGMF69ES55Jm84B8o0lbhQbJET8K2xvAWdWefHODhXrJnz73rqI8cQI06yRugpGCJ9iPqagi52a53tVIoosl6m+HuaU6m7+nJR3CPb0x0VvD1atS6KGwetEzdXIyPNgFu00s6YSs/6MB0Xenr6cd0R2hdpo3BYRRaglLejDvmeK/BGbkPedfPuCmWNAAvARhAv8xctj6FPyOI0aF0rUAjZehtTE876IWzfC9fXlfTd5UbmOZInf366xgnbG8ja8Lh627ParHSbvQIuAWVa7OnqwkJN3vsGiHDk5ShRzUcnn6Z+yftOgdPKJ6/GFtE5OIriCXLZ8jQxRYoYSC0NaAva/qzXObdpjM4dH+lbGuL9iSu8zDiTHrDP/F3oR79P+TtAR9GB4JAg09hNO1TXs4qS/KY99SwnpmPcLTpkTDIFZcUCFTsyWc6kCzbX3UGrx7V1oHyEumRrl5JmWGXJz2hjUphwhvWUXHRnwJCFWCyrbNSFsaB+5O47DWIZ6cNhA4Csvsgb0e2PiUV2Nrz/miSioi0MlRoCiDO9q1MWrBcJonlTETdDUn0FvjE71NdxYN34iUMiEYQPx48rvvT6y/9jEt25kYpQKVtynbeR0HNo5rUkPL+I0UZh72eGOhfP0rBLtZYeTfhBSWLG2CfFPWqLabVj5VRu/PvnjiqA4bCbJbp3zfP6+XlO3CK7wm8l7FpGtpbunDasjTpizUce6qSe0FCqVVkta4xG2GyHe9VfclW1N6q967NvYf5MFXiSLKoUOgHzxy2vGxjdi9RmwZwUOWivF79C608HE/K1v2NnJFh4Dj/EY2IcgEse+M/cK+E3WdsJiRI1dh1yV2WUmERQfkUsGVGQxYF8+Uk8pgo2NyI5FJC+xlvdwMzKcjdTXBf1QDhZPljseIHmsEFsibY6sSBpiwJ8ThL7f9XKUbRu6etPufbruhR1Oto16nZr8R07losxJALyr0FZlE7PA/04WQcujCXf+yBpwGKYjtWv//nPpCsVuo4bXIsjVxP4nAoa/+BzoNA5SrAExTsdT9CEmMJLrJYy8i/64wSBD/7mivnEWONgl1P886YXIl8zitm4rip/WdIA5ICp5eZ0bIPeRqGvJUiPSfXZWVHKfF22Iwm5G4J0QutRQ2f0Z+V+QSgQLpJQK/SQn0gy4d28yJvgIXeSR904CLTPfdSSjqjXD4ml3qaIBaqgtZqNZKXN/GhsEzR2plf8gJYAtwofvo0jgvUq0ZFB0Ky+ef0RrfAIpqCg/TLNZkzjaI1a+Nt7riWRTcaIfyzXcpZRnfldvvqh1EM7hCrC69toGqJQjCtUwrjglqH9msQz2BHefG+6kq9Y7ks3bczq36N0MJ+vja6S/Re+JbsqpkVezAeT2PGcn4ajTTLT0aYSlRIY8qKN+rBrZwDWZd3yRNIvYzc6F446/GvaIWwTGFebrX85yynwHTJJLXpTP9IXuGmjmwujCO2QEcqremHQSlpXr2E6RoyNm8wQhO0x5ON8q6+syLCBM1PlyrshyKRwz9+nm/P9MS8rnz7i5uUzAvXoZG5TEhUj2jdUkk/lkbSXava6/pUDpC41wZdc2lwEbSwkYxOd4Dp2V5XI7HmLxTEoC1dFrhQoa3O+kSL/U6DhJv1ksBx/jWK1F6bWgEJyVMAaChpx17Qtt9hJby5tiglqaG/kLzIrhvqAio1E2zPCvIQviGWQ2c51bSrDN3t24Vw+sAkf16xBZi03hbo/W6GAHL0iAZ48hd3SDAAUUwz1gS5uALFDmos95hL0Y1wYXGPOQil+tgBt9pM752sDsbCAYyNf3yL0mYiZ+kZE47e+3oovefEOwd4ZdZ0Ulwjn5avolf0qIq/5mWHIejEI/iXfw17OAeKjGV2g/I6IF2n+unecPWce6Evwg8iDpUwc8QHRwSZNp1wZiKTRto4LgxxgFVilovgD+/zrOC/PXfKtkBm8lw/yowM2NU6tbUvRF5tThln/uRpYa/yz5jq8NU0ws0FeOEjQ4UMh0ljERULkbK840TiZa6yCqwpYztRvAJjgnllLOCUE3d6CvFDk3GPDE5qFGXa/YkOLMqjr4jxgAJMhs3pZQETxvPgs7YPDAlIclFGYHQcv01T3PggkGq5xV6ddVyuCfLWlbAzhh1QnN8PljTQFu5yWH1QMHEkRCsJ0tyEHJwcpsgGIlmLLvJWSkQo9neEngEfu65WtllLDnJBsaIAZN2Rrkg76iom/I6T9bNmtHM2l+G9YmJjQw89n7KACC7OtqbFs0aYJxWm </div>]]></content>
+    <content type="html"><![CDATA[<script src="/crypto-js.js"></script><script src="/mcommon.js"></script><span id="encrypt-message">输入密码继续访问。</span><link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap.min.css"> <link rel="stylesheet" href="//cdn.bootcss.com/bootstrap/3.3.5/css/bootstrap-theme.min.css"> <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script> <script src="//cdn.bootcss.com/bootstrap/3.3.5/js/bootstrap.min.js"></script> <div id="security"> <div> <div class="input-group"> <input type="text" class="form-control" aria-label="Enter the password." id="pass"/> <div class="input-group-btn"> <button type="button" class="btn btn-default" onclick="decryptAES()">Decrypt</button> </div> </div> </div> </div> <div id="encrypt-blog" style="display:none"> U2FsdGVkX1+tq11dSIcAo1097u7Tp+hnSHxmCYg9rsEDbzwaPhRmrEGOT/YzCmmcO03vDKM1j1S7DwYl5rwnKl7pPYmFmKj9Kuwgxw7n2esCYaclxxXXmGWWqANEyJLvRWuHG7zFmQx/YuhFFmG5vI2v9u3IW0xQJasULCw4FlkWW2DyMu130c0uWYmHp3mzwF0yTCDbGctsbFIR5AUcmYGVsC4Rnoo7N6Yl6k7gq7EFdzUH7dLKuORx3hZ+79kqjMrCTrf6ZDAlz1ZE2BEIV0/+hZnUBXuFy2+MkzWQWOeafan3JBza4c/cNSiHulT6UYzVf1UiKFdQstBryJ5YwHPaaGN/gBtkShrTIe0goV6Dn8DUvIr+2FhiOPLV4UziQO8wCoJLX2OuBCi2dJKZT9RC9ObPnlUwy20QZ4nN6f4N/jE933Nz7fTBJI37/uwxmdNPjN0zR5NgEUr+f2lOAieh3/1gE8HkcKdJRjijwJnVF37GGYLBdLTZ+0+gc0Lgzabro/ABLKe/LTwaJfDeFGz92laiyu2ay7toaVsFBcbNGNC7x7c2WaH64liX/mNQ4u6gnlqC6kDID7xhMqDUEC8nN5RsM6he/dH6h49jlX78K+/ZsE+xr6LpFH4PDXVCyiiCq3K0HnlAv8DYmaAVbIKOqsfve2WsX8eVoY0YJyijnE24aXavldQb/YzAoa+bwn+/Sjg3h4zaYZf8ifOBe7TXYJF8y8VxKPfeL1HMyMfWrWTV1i8X4zOulLkQQmH/hwHhgcPp8epxuiHLxGtpiXm32Wk+qASsW4ai08NSIN5S+LCwFYBlUBUbbsakZZy8COQpXZZSdGYAQBIggMrDvVM7J/wS1tb5fDSVU54numd+KhHLjKInFbYZWqjKcVuR6kj8mVRC9nUfQf81vlxCC9obq+clZLhUkK0huUcFG27Ue0wPjkZHBf6/4Ho1opcLw5M68XLoUmmNNc4/yWVOFRNXLDW4932I25qghR5EqDLVDT3MJpN5gNUHYNszL0x1cVZHnnthdgmSdOMDNjLY4MiTC9XwF3sAQk4FPyA+mYu4VhKnqaWm5rSsfUeZ7ioUT3rU22qljnfIVsnpW3U7UIye+5oOU4yNA9PuepBa3RdipyOWQAbwoNXuUSHtiFeziiY3gT1tAty54h7Ga4I6txDd5PeY86zgfRHYe/bX+838jR0HxjRnTrDJjlVrBmgHi4/26VW2V/Gq2I/B/Q+DpTNib8hCCWGkWAFblct0J+WpKo4nSU7HR7asl2QmiE23vfZz9RxVvltxUfWeyriH1OsKEwjwOS3BTcvtvBvOBm9wLCPsSpVg0hF5NSlL+LdHpXIwYtI1tD+MGhVJ6iPC13eWakBol5yZH2SmP3GDPHG7CWTi/L0kkROzlgKeFf/TGTZqyOklLIQ/fmSCw3lv2d7DGRb6PMkzjHaqalzjwXrdTq9I0p1i91IvRrEARNXU0vhdOoZmsPkIz3swly1N/GKd2gJvNMtjya24ql9olGDudapk6UFFvatN2K0wfgjS8PZG7OI8qU/FUKGQm1GyWPDE6O+MNKMPIZBGqon/y5nswMI7wBrFB6Jv+I5Y20bwbidf6ZnuokUqo+7gGT+kngTR2X1hf5+nmRNXPrsjYxnoTmPx1nOUxUhDtix7qv9YFugte8Ke2CoOp8IPgBM1hwwOk5G+ZR3mleCb5MBiL5dPjNlVpSHwRTmKbN6O6dAZWPHZecITWnGlhHxT2PVmgSELlY/Y9yy79aeCeNjIY4Kfov7ELLcOVqRlVdGhT48bmhmDKRoJAUIBhqNZqV47FichZFTYjUQNb1ehJy9lsn69GCs7TJNF2gG2Iwgu9fmDJTI8AvF/IZFE2i/VcMHIKDySrGIeC4hG1MYfkZt1QGaS+rQxnNGZZYJhuWsrT9pQjXBgf+XaEwzZebszegTZ6gUAeDnNVdr0ZjhRewTSHvQKlaGG7u+UdZsL5PZzZLiAebSq/7OicNlWN+OiP6qojXFXWWQ/RAUiVIuQMfz/qTRb1GqQhmONYEG/IJThLCxhkN6CQau1l7sxnrdJbSsEwxbl7+LnLd2Kj0MMefQ/182Fx+fZDauNnobuuxmnIAnEm2VbLd82nBYSVSCA/GAH1qYfVYYyA96Dukq+kONhlIo0G20+NPIaqvSJ1hIy9IQMVK2D+iObP5MyYPYYyS6q7AwLv9xlkI2OLNNLeZ2wGhe6iz2AiAIR+x1F44K224bg9OBFb2SXLfUquO4YYSwJeTKWSw6aq65oImtBf4vzzJeURopGKz8iGts5PHuNtCgKvEq1SaSuxeBLLxK/QKD/a1u1TW6dkLzKag2QM50+ioJuKH0vYgmM/0KsJE/6nmMmhSXgW30aFb7T9QmEMR/biEdVbTn48HmimHUKKyQxIoZ25iMspuTcO9jYM10IY3plzU3aHoQ8lSHg1aYKSm3VDsuzLfIXAqo1yyexMbW/qGYh+ttJoXeRO+oKO6p8IRF60qOQCS8SW6bPUsUY0xayS/jfJYbHNhR+g0hU8hbbtdD13UeJTtSG4Ot3cZfoL4XkuOijUv3d63tNXy+S+22+I9MVx3PlaW0wxHvdSFaHUNcMfg2+2UbKfWua0cHanIZDHh+iyRzgtWDLEyGhnkkyf8z9VAwA6XleMfUXugWkIZuJG3YzWGaLn+2a0m6848bj+qa+veVvUTxCXqz/sOk3n34b+h8gCxnvOH6FS4fmg3Ao9Yw4v7M7i+p4vjuD1gwFnAvbiniCbI1jK1B/mjI/L+6RSfBLnOSFCK7xhQU6/VReZz/7Hg5h1WqHJ6ICopY2/oFZGDHUElyCXFzha90rgjncrtwEgTHJm8ffGqMLB/Byp9rsJJ3EcXDjY6mtyQkk6BQdXZ2QHgtJeEiRupgdXkDMLeAnbe/JEGzZ5gO54hDfFjcBxx2cmAz7Jebi7aQSnV4I2RWULt0JD30mbpC24J4j1nhTZsq132ETd6hcon9K++136WUSGVSzwFb577ey1f1krGpby09SfEn3fdRQppcGAXTQpUKyENDB84a5psmFV1OgsHsHODrxGScZew7siZ3P3fgX8TJvtF/UqXHH+ZrMc3dvQwmN4gDfrF4GedKlnJnCSh4XK1vUw1VYNXY97HqX2Qy8pLa6DsFsuFy+E95lVy5wto6XobSlndeDFo3NsByLcy8KUR8M+4hCanCYj6ytOeiVsid8TIvibkwBR3XL2Ph/+ocYBGp7rUaE/BoJELTLd6BrDlIOMjKFmh6j19H27J0FgRairqmpTYSr3ZG6UPOo58g6IqwS9cAJq09TrIq/+Wut4i4cxmD1FsKbbOsU036sm+cXLobREf+c/vDFiqFds608uTpv9wsSaIEdl5m5PbhYY9htA5RDAIYf </div>]]></content>
     <summary type="html">
     <![CDATA[Sorry.本篇需要密码才能阅读。]]>
     
