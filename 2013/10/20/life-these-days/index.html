@@ -1,10 +1,43 @@
-extends base-without-sidebar
-block title
-  title= page.title + ' | ' + config.title
-block content
-  .post
-    h1.post-title= page.title
-    .post-content
-      != page.content
-  if page.comments
-    include _partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>生活&amp;软件（杂记） | Lancezhange</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">生活&amp;软件（杂记）</h1><a id="logo" href="/.">Lancezhange</a><p class="description">蓝色战歌</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a target="_blank" rel="noopener" href="http://www.lancezhange.com/grocery_store/"><i class="fa fa-archive"> 笔记</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a><a href="/gallery/"><i class="fa fa-user"> photos</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">生活&amp;软件（杂记）</h1><div class="post-content"><h4 id="生活"><a href="#生活" class="headerlink" title="生活"></a>生活</h4><p>先说生活。<br>最近这一个月过的有点懒散<a id="more"></a>，没有课上的大学生活其实没有以前想象的那般惬意，大把的时间完全交给自己，却不知道怎样才能最充分地利用，每天除了出去买两次饭，其余时间都趴在电脑前，过的跟个猴子似的。先是重温了《神探狄仁杰》前两部，跟随着狄仁杰和李元芳一步一步击破蛇灵逆党，然后又在《绝命毒师》这部美剧里见证了化学是一门多么有用的学科。这里要强烈赞美一下《绝命毒师》那极端吸引人的剧情，尤其是前两季，简直跟《越狱》的前两季有的一拼，不过第三季就已经开始有点摇曳了，所以我看完第三季就赶紧打住与后面两季说了再见。此外，《生活大爆炸》第七季仍是每周的期待，而我居然听说《吸血鬼日记》出了第五季，真心佩服编剧没完没了的胡扯功力啊，打死我都不会再看了。最后，这几天又找了两部英剧，《IT狂人》和《是，首相》，都是搞笑剧，只不过前者是无厘头式的搞笑，后者是政治讽刺的滑稽，尤其是后者，充满了智慧和幽默，实在难得。<br>最近也刷了很多电影，有些是纯粹打发时间用的，比如，老港片《英雄儿女》，赵薇的《致青春》（作为一部国产片，致青春算是佼佼者了，至少是我最近看过的唯一一部国产片）。还有几部是神作级别的，比如诺兰的《记忆碎片》（看完如果不是很明白，看<a href="http://movie.douban.com/review/1096945/" target="_blank" rel="external">豆瓣上这篇超赞的解析</a>），以及“另类的”西部片《虎豹小霸王》。   </p>
+<h4 id="软件"><a href="#软件" class="headerlink" title="软件"></a>软件</h4><p>接着说软件。<br>最近真心碰到了一些很不错的软件，并且很多都是免费开源的。说实话，开源免费软件的开发者们这种无私的分享精神让我很感动。作为穷学生一枚，现在还没有经济能力捐助他们，就等日后有了工作再回馈吧。不过现在至少还有一件事可以做，那就是向更多的人推介这些优秀的软件。  </p>
+<ol>
+<li><p>R<br>不仅是一个统计分析软件，也是一门编程语言。最近已经火的不行了。 knitr, ggplot2 等巨给力的包更使其实力不可小觑。并且R的生态系统已经十分完善。   </p>
+</li>
+<li><p>Sublime Text 2  不是免费的，但支持无限期试用；有能力的还是买了吧，绝对是神器。  </p>
+</li>
+<li><p>为知笔记<br>我有做笔记的习惯，但通常是记在纸本上。记在纸本上的笔记有个很大的缺点：检索不方便，尤其内容较多的时候，要找到某个要点很是费劲，而电子笔记可以很好滴解决这个问题。为知笔记是一款极其（注意，是极其）优秀的国产笔记软件，用起来相当顺手，我正在努力养成用为知记电子笔记的好习惯。  </p>
+</li>
+<li><p>Everything<br>文件搜索利器，神器，Windows装机必备。  </p>
+</li>
+<li><p>D3<br>一个用以数据可视化的 JavaScript 函数库。  </p>
+</li>
+<li><p>Octopress<br>做静态网站，搭建博客（本博客即是用Octopress搭建）  </p>
+</li>
+<li><p>hexo<br>同上，也是作搭建博客之用。  </p>
+</li>
+<li><p>impress.js<br>可以做出很销魂的HTML幻灯片。  </p>
+</li>
+<li><p>WAMP Server<br>Windows + Apache + MySQL + PHP   </p>
+</li>
+<li><p>pandoc<br>用haskell 编写的文件格式转换神器。    </p>
+</li>
+<li><p>calibre<br>强大无比的一站式电子书管理工具。   </p>
+</li>
+</ol>
+</div></div><div id="lv-container" data-id="city" data-uid="MTAyMC80NDE4Ny8yMDcyMA=="><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');
+
+</script></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">© <a>2021 </a><a href="/." rel="nofollow">Lancezhange.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme maupassant</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?37cb69c6337b15a527d21b92d9063684";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

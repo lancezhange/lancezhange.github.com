@@ -1,10 +1,30 @@
-extends base-without-sidebar
-block title
-  title= page.title + ' | ' + config.title
-block content
-  .post
-    h1.post-title= page.title
-    .post-content
-      != page.content
-  if page.comments
-    include _partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>hexo 中的幻灯片 | Lancezhange</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">hexo 中的幻灯片</h1><a id="logo" href="/.">Lancezhange</a><p class="description">蓝色战歌</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a target="_blank" rel="noopener" href="http://www.lancezhange.com/grocery_store/"><i class="fa fa-archive"> 笔记</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a><a href="/gallery/"><i class="fa fa-user"> photos</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">hexo 中的幻灯片</h1><div class="post-content"><p>如果能在博客中插入幻灯片，想必是极好的。</p>
+<p>第一种方式是嵌入式幻灯片，这可以像我们之前引入 jmpress.js 那样实现，不过那有点麻烦，直接用 <code>iframe</code> 其实就足够了。<a id="more"></a></p>
+<p>比如，下面将我的 About 页面嵌入（点击之后，方向键即可翻页）</p>
+<hr>
+<iframe src="http://www.lancezhange.com/about/#/welcome？" height="400px" width="90%" align="center"></iframe>
+
+<p>仅仅用到如下代码而已<br><figure class="highlight routeros"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">&lt;iframe <span class="attribute">src</span>=<span class="string">"http://www.lancezhange.com/about/#/welcome？"</span> <span class="attribute">height</span>=<span class="string">"400px"</span> <span class="attribute">width</span>=<span class="string">"90%"</span> <span class="attribute">align</span>=<span class="string">"center"</span>&gt;&lt;/iframe&gt;</div></pre></td></tr></table></figure></p>
+<p>因此推荐这种方式。但前提是你的幻灯片已经托管在了其他合适的地方。</p>
+<hr>
+<p>第二种方式是全页面式幻灯片.</p>
+<p>我们可以先写好 html 文件，然后只要不让 hexo 渲染它，而是直接拷贝过去就好了。但这样不仅麻烦，而且也有许多问题，比如，这样的幻灯片如何出现在摘要列表当中呢？ 当然，可以将 html 幻灯片作为新的页面生成，然后写一篇新的文章，里面包含指向该新页面的链接，正如<a href="http://yeejlan.github.io/2014/07/10/host-blog-on-github-using-hexo/" target="_blank" rel="external">这里所做的</a>那样, 新页面不会出现在摘要列表当中，自然也就没有了摘要页面错乱的问题，不失为一种解决办法，但有点治标不治本的感觉。</p>
+<p>更好的解决方案是，直接定义一种新的 layout, 例如称为 slide (和 post, page 无异)，<code>hexo new slide [slides_name]</code> 即可生成模板，因为支持 markdown 语法，所以直接用 markdown 制作，制作完成后，用 hexo 生成 html 页面（完美复制 RStudio 中 markdown 制作幻灯片的丝滑享受）；我们可以自定义对该 layout 的渲染方式，以及相应的展现方式等，这样就完美了。</p>
+<p>目前还没找到现成的代码，等我有时间自己写一个吧。</p>
+</div></div><div id="lv-container" data-id="city" data-uid="MTAyMC80NDE4Ny8yMDcyMA=="><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');
+
+</script></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">© <a>2021 </a><a href="/." rel="nofollow">Lancezhange.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme maupassant</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?37cb69c6337b15a527d21b92d9063684";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

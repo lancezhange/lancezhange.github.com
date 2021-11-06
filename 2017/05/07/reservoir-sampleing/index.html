@@ -1,10 +1,53 @@
-extends base-without-sidebar
-block title
-  title= page.title + ' | ' + config.title
-block content
-  .post
-    h1.post-title= page.title
-    .post-content
-      != page.content
-  if page.comments
-    include _partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>蓄水池抽样算法 | Lancezhange</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">蓄水池抽样算法</h1><a id="logo" href="/.">Lancezhange</a><p class="description">蓝色战歌</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a target="_blank" rel="noopener" href="http://www.lancezhange.com/grocery_store/"><i class="fa fa-archive"> 笔记</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a><a href="/gallery/"><i class="fa fa-user"> photos</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">蓄水池抽样算法</h1><div class="post-content"><p>当我谈蓄水池抽样算法，我谈些什么。<br><a id="more"></a></p>
+<p>前些日子翻完了村上春树的《当我谈跑步时我谈些什么》，很喜欢，即使我不是一个跑者，即使我读完也并没有心生去做一个跑者的志向，也许只是因为村上的文字中特有的那种吸引力吧。本文标题化用了村上这本书的书名，当然了，村上的书名本身也是化用的别人的，这是题外话。</p>
+<p>下面回到主题：蓄水池抽样算法。</p>
+<p>我第一次知道这个算法其实是在我第一次去B厂面试的时候，面试官问了我这个问题，虽然当时他并没有告诉我这个叫蓄水池抽样。</p>
+<p>问题是这样的，假设有一个数据流源源不断来到，而你想从中等概率抽取K个，如何抽取？</p>
+<p>最大的难点在于，样本空间不是固定的，而是像一条水流一样不断流入，并且有可能在某一时刻停止。</p>
+<p>这就是蓄水池抽样算法要解决的问题。而用来解决这个问题的蓄水池抽样算法其实也和这个问题一样，并不复杂或高深。</p>
+<h3 id="命运的公平与残酷"><a href="#命运的公平与残酷" class="headerlink" title="命运的公平与残酷"></a>命运的公平与残酷</h3><p>因为想要抽取K个，所以对前K个到来的样本，都把它们放入幸运儿水池。可以想象，如果水流很小，只来了K个或者甚至连K个样本都没有，则将它们悉数入选，这符合题目要求。</p>
+<p>对于后面来的第K+i(i=1,…)个样本，以概率 $ \frac K {K+i} $ 选择留下它。这对该样本来说是公平的，毫无疑问。</p>
+<p>池子就那么大，我们只要K个，新人到来，旧人只好被踢出局，命运就是这么残酷。</p>
+<p>剔掉哪一个呢，自然是不偏不倚，随机选取一个淘汰出局咯，也就是说，以概率$\frac 1 K$，选取一个之前的幸运儿，把它踢掉，是的，无情地踢掉。</p>
+<p>以上就是算法的全部了。要证明这样选取确实是等概率的，也很简单，用一下数学归纳法，或者直接按乘法公式写出概率式子（会发现分子分母消除规律），很容易不是吗。</p>
+<h3 id="路总是不止一条"><a href="#路总是不止一条" class="headerlink" title="路总是不止一条"></a>路总是不止一条</h3><p>其实还有一种更为简单的做法：为每一个到来的样本赋予一个0到1之间均匀分布的随机数，让这个随机数代表这个样本参与到生死竞争中，选取前K大（或者前K小）的随机数所代表的样本作为最后的K个幸运儿。</p>
+<p>这个想法同样也比较直观，但证明略微复杂一点，要用到一点积分，以及我所喜欢的gamma函数的亲戚beta函数。</p>
+<p>假设有N个样本，我们证明：从这N个样本中选取指定的K个（例如，$X_1$, $X_2$, …, $X_K$），其概率等于$\frac 1 {N \choose K}$.</p>
+<p>注意到，必然有一个$x \in [0,1]$, x 将这K个幸运儿与其他 N-K 个时运不济的家伙分割开来，形成一道天然的屏障，左手是$Y$，右手是$X$。</p>
+<p>K个幸运儿之间并无大小之分，它们大于x的概率为<br>$$<br>p(X&gt;x) = \prod_{i=1}^K {p(X_i &gt; x) = {(1-x)}^K}<br>$$</p>
+<p>N-K 个卢瑟儿也无所谓顺序，只知道它们小于x, 其概率为<br>$$<br>F(x) = \prod_{i=1}^{N-K} {p(Y_i \le x) = {x^{N-K}}}<br>$$</p>
+<p>则能够达成上述安排的概率为<br>$$<br> \int_0^1 p(Y=x)P(X&gt;x)dx \\<br> = \int_0^1 {(1-x)}^K dF(x) \\<br> = (N-K) \int_0^1 {(1-x)^K \times {x}^{N-K-1}dx} \\<br>$$</p>
+<p>再结合beta函数跟gamma函数的血亲关系，以及gamma函数对阶乘的扩展，易得最后之结论。</p>
+<p>这种方法，因为要维护一个容量为K的堆，效率上要比第一种低一些，但有得必有失，它也有其优点，并且，这是一个‘致命’的优点：适合于分布式的场景。</p>
+<h3 id="还有一个问题要问"><a href="#还有一个问题要问" class="headerlink" title="还有一个问题要问"></a>还有一个问题要问</h3><p>蓄水池抽样能够公平地选取一个集合，这是没有问题的。问题是，序列也是公平的吗？</p>
+<p>答案是并非如此。按照两种抽取方法抽出有序的K个样本，每种样本序列出现的概率并不相等。</p>
+<p>例如，从{1,2,3}中选2个样本，只能选出{1,3},{1,2},{3,2}， 选不出{3,1},{2,1},{2,3}</p>
+<p>即使一开始知道N的大小，并且随机选取一个起始点，也是如此，公平的集合，不公平的序列。</p>
+<p>要想序列公平，只能随机抽。如果抽到重复的，就丢了继续，直到抽满K个。</p>
+</div></div><div id="lv-container" data-id="city" data-uid="MTAyMC80NDE4Ny8yMDcyMA=="><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');
+
+</script></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">© <a>2021 </a><a href="/." rel="nofollow">Lancezhange.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme maupassant</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?37cb69c6337b15a527d21b92d9063684";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/x-mathjax-config">MathJax.Hub.Config({
+jax: ["input/TeX", "output/HTML-CSS"],
+tex2jax: {
+  inlineMath: [ ['$', '$'] ],
+  displayMath: [ ['$$', '$$']],
+  processEscapes: true,
+  skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+},
+messageStyle: "none"
+});
+</script><script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" async></script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>

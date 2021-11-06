@@ -1,10 +1,64 @@
-extends base-without-sidebar
-block title
-  title= page.title + ' | ' + config.title
-block content
-  .post
-    h1.post-title= page.title
-    .post-content
-      != page.content
-  if page.comments
-    include _partial/comments
+<!DOCTYPE html><html lang="zh-CN"><head><meta http-equiv="content-type" content="text/html; charset=utf-8"><meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport"><meta content="yes" name="apple-mobile-web-app-capable"><meta content="black-translucent" name="apple-mobile-web-app-status-bar-style"><meta content="telephone=no" name="format-detection"><meta name="description"><title>More D3 Example -- Rounded Rectangles | Lancezhange</title><link rel="stylesheet" type="text/css" href="/css/style.css?v=0.0.0"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/normalize/6.0.0/normalize.min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/pure-min.css"><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/pure/0.6.2/grids-responsive-min.css"><link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css"><script type="text/javascript" src="//cdn.bootcss.com/jquery/3.2.1/jquery.min.js"></script><link rel="Shortcut Icon" type="image/x-icon" href="/favicon.ico"><link rel="apple-touch-icon" href="/apple-touch-icon.png"><link rel="apple-touch-icon-precomposed" href="/apple-touch-icon.png"><link rel="alternate" type="application/atom+xml" href="/atom.xml"><meta name="generator" content="Hexo 5.4.0"></head><body><div class="body_container"><div id="header"><div class="site-name"><h1 class="hidden">More D3 Example -- Rounded Rectangles</h1><a id="logo" href="/.">Lancezhange</a><p class="description">蓝色战歌</p></div><div id="nav-menu"><a href="/." class="current"><i class="fa fa-home"> 首页</i></a><a href="/archives/"><i class="fa fa-archive"> 归档</i></a><a target="_blank" rel="noopener" href="http://www.lancezhange.com/grocery_store/"><i class="fa fa-archive"> 笔记</i></a><a href="/about/"><i class="fa fa-user"> 关于</i></a><a href="/atom.xml"><i class="fa fa-rss"> 订阅</i></a><a href="/gallery/"><i class="fa fa-user"> photos</i></a></div></div><div id="layout" class="pure-g"><div class="pure-u-1 pure-u-md-4-4"><div class="content_container"><div class="post"><h1 class="post-title">More D3 Example -- Rounded Rectangles</h1><div class="post-content"><p>下面是另外一个好玩的D3作品，出自<a href="http://bl.ocks.org/mbostock/1123639" target="_blank" rel="external">这里</a>，enjoy!<a id="more"></a></p>
+<script src="http://d3js.org/d3.v3.min.js"></script> 
+<div id="body1">
+</div>
+
+<script>
+var mouse = [480, 250],
+    count = 0;
+
+var svg = d3.select("#body1").append("svg")
+    .attr("width", 960)
+    .attr("height", 500);
+
+var g = svg.selectAll("g")
+    .data(d3.range(25))
+  .enter().append("g")
+    .attr("transform", "translate(" + mouse + ")");
+
+g.append("rect")
+    .attr("rx", 6)
+    .attr("ry", 6)
+    .attr("x", -12.5)
+    .attr("y", -12.5)
+    .attr("width", 25)
+    .attr("height", 25)
+    .attr("transform", function(d, i) { return "scale(" + (1 - d / 25) * 20 + ")"; })
+    .style("fill", d3.scale.category20c());
+
+g.datum(function(d) {
+  return {center: [0, 0], angle: 0};
+});
+
+svg.on("mousemove", function() {
+  mouse = d3.mouse(this);
+});
+
+d3.timer(function() {
+  count++;
+  g.attr("transform", function(d, i) {
+    d.center[0] += (mouse[0] - d.center[0]) / (i + 5);
+    d.center[1] += (mouse[1] - d.center[1]) / (i + 5);
+    d.angle += Math.sin((count + i) / 10) * 7;
+    return "translate(" + d.center + ")rotate(" + d.angle + ")";
+  });
+});
+
+</script>
+</div></div><div id="lv-container" data-id="city" data-uid="MTAyMC80NDE4Ny8yMDcyMA=="><script>(function(d, s) {
+   var j, e = d.getElementsByTagName(s)[0];
+   if (typeof LivereTower === 'function') { return; }
+   j = d.createElement(s);
+   j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+   j.async = true;
+   e.parentNode.insertBefore(j, e);
+})(document, 'script');
+
+</script></div></div></div><div class="pure-u-1 pure-u-md-4-4"><div id="footer">© <a>2021 </a><a href="/." rel="nofollow">Lancezhange.</a> Powered by<a rel="nofollow" target="_blank" href="https://hexo.io"> Hexo.</a><a rel="nofollow" target="_blank" href="https://github.com/tufu9441/maupassant-hexo"> Theme maupassant</a> by<a rel="nofollow" target="_blank" href="https://github.com/pagecho"> Cho.</a></div></div></div><a id="rocket" href="#top" class="show"></a><script type="text/javascript" src="/js/totop.js?v=0.0.0" async></script><script type="text/javascript" src="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.js" async></script><script type="text/javascript" src="/js/fancybox.js?v=0.0.0" async></script><link rel="stylesheet" type="text/css" href="//cdn.bootcss.com/fancybox/3.0.47/jquery.fancybox.min.css"><script>var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "//hm.baidu.com/hm.js?37cb69c6337b15a527d21b92d9063684";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+  })();
+</script><script type="text/javascript" src="/js/codeblock-resizer.js?v=0.0.0"></script><script type="text/javascript" src="/js/smartresize.js?v=0.0.0"></script></div></body></html>
